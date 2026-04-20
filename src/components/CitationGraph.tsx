@@ -12,13 +12,13 @@ const MOCK_NODES: GraphNode[] = [
   { id: 'n6', label: 'Srinivas Mall Bairoliya', type: 'cited', year: 1947, score: 70, x: 50, y: 15 },
 ];
 
-// const MOCK_LINKS: GraphLink[] = [
-//   { source: 'n2', target: 'n1', type: 'supports' },
-//   { source: 'n3', target: 'n1', type: 'supports' },
-//   { source: 'n6', target: 'n1', type: 'supports' },
-//   { source: 'n1', target: 'n4', type: 'supports' },
-//   { source: 'n1', target: 'n5', type: 'distinguishes' },
-// ];
+const MOCK_LINKS: GraphLink[] = [
+  { source: 'n2', target: 'n1', type: 'supports' },
+  { source: 'n3', target: 'n1', type: 'supports' },
+  { source: 'n6', target: 'n1', type: 'supports' },
+  { source: 'n1', target: 'n4', type: 'supports' },
+  { source: 'n1', target: 'n5', type: 'distinguishes' },
+];
 
 // export function CitationGraph() {
 //   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(MOCK_NODES[0]);
