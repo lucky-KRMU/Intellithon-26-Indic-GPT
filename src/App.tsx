@@ -7,8 +7,8 @@ import { RatioExtractor } from './components/RatioExtractor';
 import { CrossLingualMapper } from './components/CrossLingualMapper';
 import { CitationGraph } from './components/CitationGraph';
 
-// export default function App() {
-//   const [activeTab, setActiveTab] = useState('search');
+export default function App() {
+  const [activeTab, setActiveTab] = useState('search');
 
 //   return (
 //     <div className="flex h-screen w-full bg-background text-text overflow-hidden font-sans relative">
