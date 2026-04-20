@@ -37,6 +37,20 @@ export function RatioExtractor() {
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
+          <button
+            onClick={handleExtract}
+            disabled={!text || isExtracting}
+            className="mt-4 w-full bg-gradient-to-r from-accent to-primary hover:opacity-90 text-white py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2 disabled:opacity-50"
+          >
+            {isExtracting ? (
+              <>
+                <motion.div animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 1, ease: "linear" }}><ScanLine size={18} /></motion.div>
+                Analyzing via InLegalBERT...
+              </>
+            ) : (
+              <>Extract Ratio</>
+            )}
+          </button>
           
         </motion.div>
         </div>
