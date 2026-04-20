@@ -15,7 +15,6 @@ export default function App() {
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
       
       <main className="flex-1 overflow-y-auto relative scroll-smooth flex flex-col">
-        {/* Ambient background glows */}
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[40%] bg-accent/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
         
@@ -28,11 +27,11 @@ export default function App() {
             transition={{ duration: 0.2 }}
             className="flex-1 relative z-10 w-full h-full flex flex-col"
           >
-            {activeTab === 'search' && <SemanticSearch />}
-            {activeTab === 'ratio' && <RatioExtractor />}
-            {activeTab === 'mapper' && <CrossLingualMapper />}
-            {activeTab === 'graph' && <CitationGraph />}
-          </motion.div>
+             {activeTab === 'search' && <SemanticSearch />}
+             {activeTab === 'ratio' && <RatioExtractor />}
+             {activeTab === 'mapper' && <CrossLingualMapper />}
+             {activeTab === 'graph' && <CitationGraph />}
+           </motion.div>
         </AnimatePresence>
       </main>
     </div>

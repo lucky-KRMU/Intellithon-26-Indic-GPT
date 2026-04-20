@@ -37,7 +37,7 @@ export function CitationGraph() {
       <div className="flex-1 flex gap-6 min-h-0">
         <div className="flex-1 glass-panel rounded-2xl relative overflow-hidden bg-black/40 border border-white/10 shadow-[inset_0_0_100px_rgba(0,0,0,0.5)]">
            <svg width="100%" height="100%" className="absolute inset-0">
-             {MOCK_LINKS.map((link, i) => {
+              {MOCK_LINKS.map((link, i) => {
                const sourceNode = MOCK_NODES.find(n => n.id === link.source)!;
                const targetNode = MOCK_NODES.find(n => n.id === link.target)!;
                const isSupport = link.type === 'supports';
@@ -57,7 +57,7 @@ export function CitationGraph() {
                );
              })}
              
-             {MOCK_NODES.map((node, i) => {
+              {MOCK_NODES.map((node, i) => {
                 const isCentral = node.type === 'central';
                 const isSelected = selectedNode?.id === node.id;
                 return (
@@ -80,12 +80,12 @@ export function CitationGraph() {
            </svg>
         </div>
 
-        <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="w-80 glass-panel rounded-2xl p-6 flex flex-col h-full overflow-y-auto">
+         <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="w-80 glass-panel rounded-2xl p-6 flex flex-col h-full overflow-y-auto">
           <div className="flex items-center gap-2 mb-6 text-textMuted border-b border-white/10 pb-4">
             <Info size={18} /> <h3 className="font-semibold text-sm">Node Details</h3>
           </div>
           
-          {selectedNode ? (
+           {selectedNode ? (
             <div className="flex flex-col gap-4">
                <div>
                  <div className="text-xs text-textMuted uppercase tracking-wider mb-1">Case Name</div>
@@ -105,7 +105,7 @@ export function CitationGraph() {
                <div className="mt-4 pt-4 border-t border-white/10">
                  <div className="text-xs text-textMuted uppercase tracking-wider mb-3">Connections</div>
                  <ul className="space-y-2">
-                   {MOCK_LINKS.filter(l => l.source === selectedNode.id || l.target === selectedNode.id).map((l, i) => {
+                    {MOCK_LINKS.filter(l => l.source === selectedNode.id || l.target === selectedNode.id).map((l, i) => {
                      const isSource = l.source === selectedNode.id;
                      const otherNodeId = isSource ? l.target : l.source;
                      const otherNode = MOCK_NODES.find(n => n.id === otherNodeId)!;
