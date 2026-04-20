@@ -69,16 +69,16 @@ export function CitationGraph() {
                       cx={`${node.x}%`} cy={`${node.y}%`} 
                       r={isCentral ? 24 : 16}
                       fill={isCentral ? '#4F46E5' : (node.type === 'cited' ? '#0EA5E9' : '#8B5CF6')}
-//                       className={`shadow-xl ${isSelected ? 'stroke-white stroke-[3px]' : 'stroke-white/20 stroke-2'}`}
-//                     />
-//                     <text x={`${node.x}%`} y={`${node.y + (isCentral ? 8 : 5)}%`} textAnchor="middle" fill="white" fontSize="10" className="pointer-events-none drop-shadow-md font-medium bg-black/50">
-//                       {node.label.length > 15 ? node.label.substring(0,15) + '...' : node.label}
-//                     </text>
-//                   </g>
-//                 )
-//              })}
-//            </svg>
-//         </div>
+                      className={`shadow-xl ${isSelected ? 'stroke-white stroke-[3px]' : 'stroke-white/20 stroke-2'}`}
+                    />
+                    <text x={`${node.x}%`} y={`${node.y + (isCentral ? 8 : 5)}%`} textAnchor="middle" fill="white" fontSize="10" className="pointer-events-none drop-shadow-md font-medium bg-black/50">
+                      {node.label.length > 15 ? node.label.substring(0,15) + '...' : node.label}
+                    </text>
+                  </g>
+                )
+             })}
+           </svg>
+        </div>
 
 //         <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="w-80 glass-panel rounded-2xl p-6 flex flex-col h-full overflow-y-auto">
 //           <div className="flex items-center gap-2 mb-6 text-textMuted border-b border-white/10 pb-4">
