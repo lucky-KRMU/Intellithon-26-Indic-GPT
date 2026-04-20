@@ -20,20 +20,20 @@ export default function App() {
         
         <AnimatePresence mode="wait">
           <motion.div
-//             key={activeTab}
-//             initial={{ opacity: 0, x: 20 }}
-//             animate={{ opacity: 1, x: 0 }}
-//             exit={{ opacity: 0, x: -20 }}
-//             transition={{ duration: 0.2 }}
-//             className="flex-1 relative z-10 w-full h-full flex flex-col"
-//           >
-//             {activeTab === 'search' && <SemanticSearch />}
-//             {activeTab === 'ratio' && <RatioExtractor />}
-//             {activeTab === 'mapper' && <CrossLingualMapper />}
-//             {activeTab === 'graph' && <CitationGraph />}
-//           </motion.div>
-//         </AnimatePresence>
-//       </main>
-//     </div>
+            key={activeTab}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{ duration: 0.2 }}
+            className="flex-1 relative z-10 w-full h-full flex flex-col"
+          >
+             {/* {activeTab === 'search' && <SemanticSearch />}
+             {activeTab === 'ratio' && <RatioExtractor />}
+             {activeTab === 'mapper' && <CrossLingualMapper />}
+             {activeTab === 'graph' && <CitationGraph />}
+           </motion.div>
+        </AnimatePresence>
+      </main>
+    </div> */}
 //   );
 // }
