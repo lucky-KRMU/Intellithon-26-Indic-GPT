@@ -9,44 +9,36 @@ Built during **Intellithon-26**, this project focuses on breaking language barri
 
 # ✨ Features
 
-- 🌐 Multilingual chat (Indic languages)
-- 💬 Conversational AI interface
-- 🔁 Same-language responses
-- 🧠 Context-aware answers
-- ⚡ Fast API-based LLM responses
-- 🎨 Clean UI with React + Tailwind
-- 📱 Responsive design
+* 🌐 Multilingual chat (Indic languages)
+* 💬 Conversational AI interface
+* 🔁 Same-language responses
+* 🧠 Context-aware answers
+* ⚡ Fast AI responses
+* 🎨 Clean UI with React + Tailwind
+* 📱 Fully responsive design
 
 ---
 
 # 🧠 How It Works
 
 1. User types message in any Indic language  
-2. Input is sent to backend API  
-3. LLM processes multilingual context  
-4. Response generated in same language  
+2. Input is processed in the frontend  
+3. LLM API generates contextual response  
+4. Response returned in same language  
 5. UI displays formatted AI reply  
 
 ```
-User → Frontend → Backend API → LLM → Response → UI
+User → React UI → LLM API → Response → UI
 ```
 
 ---
 
 # 🛠️ Tech Stack
 
-### Frontend
-- React
-- Tailwind CSS
-- JavaScript
-
-### Backend
-- Node.js
-- Express.js
-
-### AI / LLM
-- OpenAI / Gemini / LLM API
-- Prompt orchestration
+* React  
+* Tailwind CSS  
+* JavaScript  
+* LLM API (OpenAI / Gemini / etc.)
 
 ---
 
@@ -55,10 +47,10 @@ User → Frontend → Backend API → LLM → Response → UI
 ```
 Indic-GPT/
 │
-├── frontend/        # React frontend
-├── backend/         # Express API
-├── public/          # Static assets
-├── .env             # Environment variables
+├── src/              # React source code
+├── components/       # UI components
+├── assets/           # Static assets
+├── public/
 ├── package.json
 └── README.md
 ```
@@ -78,17 +70,7 @@ cd Intellithon-26-Indic-GPT
 
 ## 2. Install dependencies
 
-### Frontend
-
 ```bash
-cd frontend
-npm install
-```
-
-### Backend
-
-```bash
-cd backend
 npm install
 ```
 
@@ -96,27 +78,17 @@ npm install
 
 ## 3. Setup Environment Variables
 
-Create `.env` file inside backend:
+Create `.env` file in root:
 
 ```
-API_KEY=your_api_key_here
+VITE_API_KEY=your_api_key_here
 ```
 
 ---
 
 ## 4. Run the project
 
-### Start backend
-
 ```bash
-cd backend
-npm run dev
-```
-
-### Start frontend
-
-```bash
-cd frontend
 npm run dev
 ```
 
@@ -125,11 +97,13 @@ npm run dev
 # 🧪 Example Usage
 
 User Input:
+
 ```
 मुझे React सीखना है, कहाँ से शुरू करूँ?
 ```
 
 AI Response:
+
 ```
 आप React सीखने के लिए सबसे पहले JavaScript के basics...
 ```
@@ -138,46 +112,37 @@ AI Response:
 
 # 🎯 Use Cases
 
-- Regional language AI assistant
-- Educational chatbot
-- Rural accessibility AI
-- Multilingual customer support
-- Indic language research
+* Regional language AI assistant  
+* Educational chatbot  
+* Multilingual productivity tool  
+* Indic language accessibility  
+* AI chat interface for Indian users  
 
 ---
-
 
 # 🔮 Future Improvements
 
-- Voice input (speech-to-text)
-- Language detection
-- Streaming responses
-- Chat history
-- Model switching
-- Translation toggle
-- Dark/light theme
+* Voice input (speech-to-text)  
+* Language detection  
+* Streaming responses  
+* Chat history  
+* Model switching  
+* Translation toggle  
+* Dark/light theme  
 
 ---
 
-# 👨‍💻 Author
+# 👨‍💻 Authors
 
-Lucky Pawar  
+### Lucky Pawar
 Frontend Developer | AI Enthusiast  
-
-GitHub: https://github.com/lucky-KRMU
-
-
-Sahil Chadha
-
-Frontend Developer | AI Enthusiast  
-
-GitHub: https://github.com/chadhas282-afk
+GitHub: https://github.com/lucky-KRMU  
 
 ---
 
-# 📄 License
-
-This project is open source and available under the MIT License.
+### Sahil Chadha
+Frontend Developer | AI Enthusiast  
+GitHub: https://github.com/chadhas282-afk  
 
 ---
 
