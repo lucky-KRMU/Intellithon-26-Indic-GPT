@@ -57,18 +57,18 @@ export function CitationGraph() {
                );
              })}
              
-//              {MOCK_NODES.map((node, i) => {
-//                 const isCentral = node.type === 'central';
-//                 const isSelected = selectedNode?.id === node.id;
-//                 return (
-//                   <g key={i} className="cursor-pointer transition-transform hover:scale-110" onClick={() => setSelectedNode(node)}>
-//                     <motion.circle 
-//                       initial={{ scale: 0 }}
-//                       animate={{ scale: 1 }}
-//                       transition={{ type: 'spring', bounce: 0.5, delay: i * 0.1 }}
-//                       cx={`${node.x}%`} cy={`${node.y}%`} 
-//                       r={isCentral ? 24 : 16}
-//                       fill={isCentral ? '#4F46E5' : (node.type === 'cited' ? '#0EA5E9' : '#8B5CF6')}
+              {MOCK_NODES.map((node, i) => {
+                const isCentral = node.type === 'central';
+                const isSelected = selectedNode?.id === node.id;
+                return (
+                  <g key={i} className="cursor-pointer transition-transform hover:scale-110" onClick={() => setSelectedNode(node)}>
+                    <motion.circle 
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ type: 'spring', bounce: 0.5, delay: i * 0.1 }}
+                      cx={`${node.x}%`} cy={`${node.y}%`} 
+                      r={isCentral ? 24 : 16}
+                      fill={isCentral ? '#4F46E5' : (node.type === 'cited' ? '#0EA5E9' : '#8B5CF6')}
 //                       className={`shadow-xl ${isSelected ? 'stroke-white stroke-[3px]' : 'stroke-white/20 stroke-2'}`}
 //                     />
 //                     <text x={`${node.x}%`} y={`${node.y + (isCentral ? 8 : 5)}%`} textAnchor="middle" fill="white" fontSize="10" className="pointer-events-none drop-shadow-md font-medium bg-black/50">
