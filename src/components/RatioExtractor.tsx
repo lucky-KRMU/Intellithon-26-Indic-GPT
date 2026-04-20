@@ -31,6 +31,12 @@ export function RatioExtractor() {
               Load Sample Case
             </button>
           </div>
+          <textarea
+            className="flex-1 w-full bg-black/20 border border-white/10 rounded-xl p-4 text-text/90 resize-none focus:outline-none focus:border-primary/50 transition-colors placeholder:text-textMuted/50"
+            placeholder="Paste judgment text here..."
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+          />
           
         </motion.div>
         </div>
