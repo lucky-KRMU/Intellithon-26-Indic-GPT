@@ -8,15 +8,15 @@ export function CrossLingualMapper() {
   const [isMapping, setIsMapping] = useState(false);
   const [mapped, setMapped] = useState(false);
 
-//   const handleMap = () => {
-//     if (!query) return;
-//     setIsMapping(true);
-//     setMapped(false);
-//     setTimeout(() => {
-//       setIsMapping(false);
-//       setMapped(true);
-//     }, 1500);
-//   };
+  const handleMap = () => {
+    if (!query) return;
+    setIsMapping(true);
+    setMapped(false);
+    setTimeout(() => {
+      setIsMapping(false);
+      setMapped(true);
+    }, 1500);
+  };
 
 //   return (
 //     <div className="h-full flex flex-col max-w-5xl mx-auto w-full p-6 lg:p-10 relative z-10">
