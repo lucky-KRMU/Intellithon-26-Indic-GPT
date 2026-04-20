@@ -51,16 +51,16 @@ export function CrossLingualMapper() {
             />
           </div>
           <button
-//             onClick={handleMap}
-//             disabled={!query || isMapping}
-//             className="w-full md:w-auto bg-secondary hover:bg-secondary/80 text-white px-8 py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2"
-//           >
-//             {isMapping ? <motion.div animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 1, ease: "linear" }}><Search size={18} /></motion.div> : 'Map Query'}
-//           </button>
-//         </div>
-//       </div>
+            onClick={handleMap}
+            disabled={!query || isMapping}
+            className="w-full md:w-auto bg-secondary hover:bg-secondary/80 text-white px-8 py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2"
+          >
+            {isMapping ? <motion.div animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 1, ease: "linear" }}><Search size={18} /></motion.div> : 'Map Query'}
+          </button>
+        </div>
+      </div>
 
-//       {mapped && (
+      {mapped && (
 //         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-1 md:grid-cols-2 gap-8">
 //           <div className="bg-surfaceHighlight/30 rounded-2xl p-6 border border-white/5 relative">
 //             <h3 className="text-sm font-bold text-textMuted uppercase tracking-wider mb-4 flex items-center gap-2">
