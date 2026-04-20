@@ -38,6 +38,12 @@ export function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
           );
         })}
       </div>
+      <div className="mt-auto pt-4 border-t border-white/10">
+        <div className="flex items-center gap-2 px-2 py-2">
+          <div className="w-2 h-2 rounded-full bg-success shadow-[0_0_8px_rgba(16,185,129,0.8)] animate-pulse"></div>
+          <span className="text-xs text-textMuted">InLegalBERT Engine Active</span>
+        </div>
+      </div>
 
     </div>
   );
