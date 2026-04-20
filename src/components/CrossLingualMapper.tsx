@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Languages, ArrowRightLeft, BookOpen, Search } from 'lucide-react';
 
-// export function CrossLingualMapper() {
-//   const [sourceLang, setSourceLang] = useState('Hindi');
-//   const [query, setQuery] = useState('');
-//   const [isMapping, setIsMapping] = useState(false);
-//   const [mapped, setMapped] = useState(false);
+export function CrossLingualMapper() {
+  const [sourceLang, setSourceLang] = useState('Hindi');
+  const [query, setQuery] = useState('');
+  const [isMapping, setIsMapping] = useState(false);
+  const [mapped, setMapped] = useState(false);
 
 //   const handleMap = () => {
 //     if (!query) return;
