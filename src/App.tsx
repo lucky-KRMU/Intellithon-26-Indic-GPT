@@ -27,13 +27,13 @@ export default function App() {
             transition={{ duration: 0.2 }}
             className="flex-1 relative z-10 w-full h-full flex flex-col"
           >
-             {/* {activeTab === 'search' && <SemanticSearch />}
+             {activeTab === 'search' && <SemanticSearch />}
              {activeTab === 'ratio' && <RatioExtractor />}
              {activeTab === 'mapper' && <CrossLingualMapper />}
              {activeTab === 'graph' && <CitationGraph />}
            </motion.div>
         </AnimatePresence>
       </main>
-    </div> */}
+    </div>
 //   );
 // }
