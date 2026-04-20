@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 import { Network, Info } from 'lucide-react';
 import { GraphNode, GraphLink } from '../types';
 
-// const MOCK_NODES: GraphNode[] = [
-//   { id: 'n1', label: 'State of Maharashtra vs. Mayer Hans George', type: 'central', year: 1964, score: 100, x: 50, y: 50 },
-//   { id: 'n2', label: 'Sherras v. De Rutzen', type: 'cited', year: 1895, score: 80, x: 20, y: 30 },
-//   { id: 'n3', label: 'Brend v. Wood', type: 'cited', year: 1946, score: 75, x: 80, y: 30 },
-//   { id: 'n4', label: 'Nathulal vs. State of MP', type: 'citing', year: 1965, score: 90, x: 30, y: 80 },
-//   { id: 'n5', label: 'Kartar Singh v. State of Punjab', type: 'citing', year: 1994, score: 85, x: 70, y: 80 },
-//   { id: 'n6', label: 'Srinivas Mall Bairoliya', type: 'cited', year: 1947, score: 70, x: 50, y: 15 },
-// ];
+const MOCK_NODES: GraphNode[] = [
+  { id: 'n1', label: 'State of Maharashtra vs. Mayer Hans George', type: 'central', year: 1964, score: 100, x: 50, y: 50 },
+  { id: 'n2', label: 'Sherras v. De Rutzen', type: 'cited', year: 1895, score: 80, x: 20, y: 30 },
+  { id: 'n3', label: 'Brend v. Wood', type: 'cited', year: 1946, score: 75, x: 80, y: 30 },
+  { id: 'n4', label: 'Nathulal vs. State of MP', type: 'citing', year: 1965, score: 90, x: 30, y: 80 },
+  { id: 'n5', label: 'Kartar Singh v. State of Punjab', type: 'citing', year: 1994, score: 85, x: 70, y: 80 },
+  { id: 'n6', label: 'Srinivas Mall Bairoliya', type: 'cited', year: 1947, score: 70, x: 50, y: 15 },
+];
 
 // const MOCK_LINKS: GraphLink[] = [
 //   { source: 'n2', target: 'n1', type: 'supports' },
