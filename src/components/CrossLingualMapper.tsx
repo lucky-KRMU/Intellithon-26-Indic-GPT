@@ -43,14 +43,14 @@ export function CrossLingualMapper() {
           </select>
           <div className="flex-1 relative w-full">
             <input 
-//               type="text" 
-//               placeholder={`Enter query in ${sourceLang}... (e.g. "क्या हत्या के लिए इरादा जरूरी है?")`}
-//               className="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-text focus:outline-none focus:border-secondary/50 font-serif"
-//               value={query}
-//               onChange={(e) => setQuery(e.target.value)}
-//             />
-//           </div>
-//           <button
+              type="text" 
+              placeholder={`Enter query in ${sourceLang}... (e.g. "क्या हत्या के लिए इरादा जरूरी है?")`}
+              className="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-text focus:outline-none focus:border-secondary/50 font-serif"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+            />
+          </div>
+          <button
 //             onClick={handleMap}
 //             disabled={!query || isMapping}
 //             className="w-full md:w-auto bg-secondary hover:bg-secondary/80 text-white px-8 py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2"
