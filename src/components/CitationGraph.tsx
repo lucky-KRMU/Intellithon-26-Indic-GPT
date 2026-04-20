@@ -107,22 +107,22 @@ export function CitationGraph() {
                  <ul className="space-y-2">
                     {MOCK_LINKS.filter(l => l.source === selectedNode.id || l.target === selectedNode.id).map((l, i) => {
 //                      const isSource = l.source === selectedNode.id;
-//                      const otherNodeId = isSource ? l.target : l.source;
-//                      const otherNode = MOCK_NODES.find(n => n.id === otherNodeId)!;
-//                      return (
-//                        <li key={i} className="text-sm flex items-center justify-between bg-black/20 p-2 rounded border border-white/5">
-//                          <span className="truncate w-3/5" title={otherNode.label}>{otherNode.label}</span>
-//                          <span className={`text-[10px] px-1.5 py-0.5 rounded ${l.type === 'supports' ? 'bg-success/20 text-success' : 'bg-warning/20 text-warning'}`}>
-//                            {l.type}
-//                          </span>
-//                        </li>
-//                      )
-//                    })}
-//                  </ul>
-//                </div>
-//             </div>
-//           ) : (
-//             <div className="text-center text-textMuted/50 my-auto">Select a node to view details</div>
+                     const otherNodeId = isSource ? l.target : l.source;
+                     const otherNode = MOCK_NODES.find(n => n.id === otherNodeId)!;
+                     return (
+                       <li key={i} className="text-sm flex items-center justify-between bg-black/20 p-2 rounded border border-white/5">
+                         <span className="truncate w-3/5" title={otherNode.label}>{otherNode.label}</span>
+                         <span className={`text-[10px] px-1.5 py-0.5 rounded ${l.type === 'supports' ? 'bg-success/20 text-success' : 'bg-warning/20 text-warning'}`}>
+                           {l.type}
+                         </span>
+                       </li>
+                     )
+                   })}
+                 </ul>
+               </div>
+            </div>
+          ) : (
+            <div className="text-center text-textMuted/50 my-auto">Select a node to view details</div>
 //           )}
 //         </motion.div>
 //       </div>
