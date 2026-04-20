@@ -24,19 +24,19 @@ export function CitationGraph() {
   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(MOCK_NODES[0]);
 
   return (
-//     <div className="h-full flex flex-col max-w-6xl mx-auto w-full p-6 lg:p-10 relative z-10">
-//       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-6">
-//         <h2 className="text-3xl lg:text-4xl font-bold mb-2 font-serif flex items-center gap-3">
-//           <Network className="text-primary" /> Citation Graph Visualizer
-//         </h2>
-//         <p className="text-textMuted max-w-3xl text-sm">
-//           Interactive 2D graph mapping precedential relationships. Green edges support the central case, orange edges distinguish.
-//         </p>
-//       </motion.div>
+    <div className="h-full flex flex-col max-w-6xl mx-auto w-full p-6 lg:p-10 relative z-10">
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-6">
+        <h2 className="text-3xl lg:text-4xl font-bold mb-2 font-serif flex items-center gap-3">
+          <Network className="text-primary" /> Citation Graph Visualizer
+        </h2>
+        <p className="text-textMuted max-w-3xl text-sm">
+          Interactive 2D graph mapping precedential relationships. Green edges support the central case, orange edges distinguish.
+        </p>
+      </motion.div>
 
-//       <div className="flex-1 flex gap-6 min-h-0">
-//         <div className="flex-1 glass-panel rounded-2xl relative overflow-hidden bg-black/40 border border-white/10 shadow-[inset_0_0_100px_rgba(0,0,0,0.5)]">
-//            <svg width="100%" height="100%" className="absolute inset-0">
+      <div className="flex-1 flex gap-6 min-h-0">
+        <div className="flex-1 glass-panel rounded-2xl relative overflow-hidden bg-black/40 border border-white/10 shadow-[inset_0_0_100px_rgba(0,0,0,0.5)]">
+           <svg width="100%" height="100%" className="absolute inset-0">
 //              {MOCK_LINKS.map((link, i) => {
 //                const sourceNode = MOCK_NODES.find(n => n.id === link.source)!;
 //                const targetNode = MOCK_NODES.find(n => n.id === link.target)!;
