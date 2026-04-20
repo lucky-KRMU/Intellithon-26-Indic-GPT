@@ -7,7 +7,12 @@ interface SidebarProps {
 }
 
 export function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
-  
+    const tabs = [
+    { id: 'search', name: 'Semantic Search', icon: Search },
+    { id: 'ratio', name: 'Ratio Extractor', icon: FileOutput },
+    { id: 'mapper', name: 'Cross-Lingual Mapper', icon: Languages },
+    { id: 'graph', name: 'Citation Graph', icon: Network },
+  ];
 
   return (
     <div className="w-64 border-r border-white/10 glass-panel h-screen p-4 flex flex-col z-20 relative">
