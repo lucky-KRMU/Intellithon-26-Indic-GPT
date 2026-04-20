@@ -7,7 +7,14 @@ export function RatioExtractor() {
   const [isExtracting, setIsExtracting] = useState(false);
   const [result, setResult] = useState<string | null>(null);
 
-  
+  const handleExtract = () => {
+    if (!text.trim()) return;
+    setIsExtracting(true);
+    setTimeout(() => {
+      setResult("Mens rea is an essential ingredient of a criminal offence unless the statute expressly or by necessary implication excludes it.");
+      setIsExtracting(false);
+    }, 2000);
+  };
 
   return (
     <div className="h-full flex flex-col max-w-6xl mx-auto w-full p-6 lg:p-10 relative z-10">
