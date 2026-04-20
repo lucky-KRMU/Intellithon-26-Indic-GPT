@@ -17,6 +17,28 @@ export function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
         </div>
         <h1 className="text-xl font-bold tracking-tight text-gradient">Indic-Legal</h1>
       </div>
+
+ <div className="flex-1 flex flex-col gap-2">
+        <div className="text-xs font-semibold text-textMuted uppercase tracking-wider mb-2 px-2">Modules</div>
+        {tabs.map(tab => {
+          const active = activeTab === tab.id;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 text-sm font-medium ${
+                active 
+                  ? 'bg-primary/20 text-primary border border-primary/30 shadow-inner' 
+                  : 'text-textMuted hover:bg-white/5 hover:text-text'
+              }`}
+            >
+              <tab.icon size={18} className={active ? 'text-primary' : 'text-textMuted'} />
+              {tab.name}
+            </button>
+          );
+        })}
+      </div>
+
     </div>
   );
 }
