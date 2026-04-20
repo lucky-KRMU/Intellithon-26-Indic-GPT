@@ -35,5 +35,5 @@ export default function App() {
         </AnimatePresence>
       </main>
     </div>
-//   );
-// }
+  );
+}
