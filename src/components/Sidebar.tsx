@@ -7,7 +7,7 @@ interface SidebarProps {
 }
 
 export function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
-    const tabs = [
+  const tabs = [
     { id: 'search', name: 'Semantic Search', icon: Search },
     { id: 'ratio', name: 'Ratio Extractor', icon: FileOutput },
     { id: 'mapper', name: 'Cross-Lingual Mapper', icon: Languages },
@@ -23,7 +23,7 @@ export function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
         <h1 className="text-xl font-bold tracking-tight text-gradient">Indic-Legal</h1>
       </div>
 
- <div className="flex-1 flex flex-col gap-2">
+      <div className="flex-1 flex flex-col gap-2">
         <div className="text-xs font-semibold text-textMuted uppercase tracking-wider mb-2 px-2">Modules</div>
         {tabs.map(tab => {
           const active = activeTab === tab.id;
@@ -31,11 +31,10 @@ export function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 text-sm font-medium ${
-                active 
-                  ? 'bg-primary/20 text-primary border border-primary/30 shadow-inner' 
+              className={`flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 text-sm font-medium ${active
+                  ? 'bg-primary/20 text-primary border border-primary/30 shadow-inner'
                   : 'text-textMuted hover:bg-white/5 hover:text-text'
-              }`}
+                }`}
             >
               <tab.icon size={18} className={active ? 'text-primary' : 'text-textMuted'} />
               {tab.name}
