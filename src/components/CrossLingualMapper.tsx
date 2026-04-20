@@ -18,20 +18,20 @@ export function CrossLingualMapper() {
     }, 1500);
   };
 
-//   return (
-//     <div className="h-full flex flex-col max-w-5xl mx-auto w-full p-6 lg:p-10 relative z-10">
-//       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
-//         <h2 className="text-3xl lg:text-4xl font-bold mb-4 font-serif flex items-center gap-3">
-//           <Languages className="text-secondary" /> Cross-Lingual Law Mapper
-//         </h2>
-//         <p className="text-textMuted max-w-3xl">
-//           Search for legal concepts in regional Indian languages. The system maps the semantic intent to English case law using aligned multilingual embeddings.
-//         </p>
-//       </motion.div>
+  return (
+    <div className="h-full flex flex-col max-w-5xl mx-auto w-full p-6 lg:p-10 relative z-10">
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
+        <h2 className="text-3xl lg:text-4xl font-bold mb-4 font-serif flex items-center gap-3">
+          <Languages className="text-secondary" /> Cross-Lingual Law Mapper
+        </h2>
+        <p className="text-textMuted max-w-3xl">
+          Search for legal concepts in regional Indian languages. The system maps the semantic intent to English case law using aligned multilingual embeddings.
+        </p>
+      </motion.div>
 
-//       <div className="glass-panel rounded-2xl p-6 mb-8">
-//         <div className="flex flex-col md:flex-row gap-4 items-center">
-//           <select 
+      <div className="glass-panel rounded-2xl p-6 mb-8">
+        <div className="flex flex-col md:flex-row gap-4 items-center">
+          <select 
 //             value={sourceLang}
 //             onChange={(e) => setSourceLang(e.target.value)}
 //             className="bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-text focus:outline-none focus:border-secondary/50 w-full md:w-48"
