@@ -43,19 +43,19 @@ export function CitationGraph() {
                const isSupport = link.type === 'supports';
                return (
                  <motion.line 
-//                    key={i}
-//                    initial={{ pathLength: 0, opacity: 0 }}
-//                    animate={{ pathLength: 1, opacity: 1 }}
-//                    transition={{ duration: 1, delay: i * 0.2 }}
-//                    x1={`${sourceNode.x}%`} y1={`${sourceNode.y}%`}
-//                    x2={`${targetNode.x}%`} y2={`${targetNode.y}%`}
-//                    stroke={isSupport ? '#10B981' : '#F59E0B'}
-//                    strokeWidth="2"
-//                    strokeDasharray={isSupport ? "0" : "5,5"}
-//                    className="opacity-50 hover:opacity-100 transition-opacity"
-//                  />
-//                );
-//              })}
+                   key={i}
+                   initial={{ pathLength: 0, opacity: 0 }}
+                   animate={{ pathLength: 1, opacity: 1 }}
+                   transition={{ duration: 1, delay: i * 0.2 }}
+                   x1={`${sourceNode.x}%`} y1={`${sourceNode.y}%`}
+                   x2={`${targetNode.x}%`} y2={`${targetNode.y}%`}
+                   stroke={isSupport ? '#10B981' : '#F59E0B'}
+                   strokeWidth="2"
+                   strokeDasharray={isSupport ? "0" : "5,5"}
+                   className="opacity-50 hover:opacity-100 transition-opacity"
+                 />
+               );
+             })}
              
 //              {MOCK_NODES.map((node, i) => {
 //                 const isCentral = node.type === 'central';
