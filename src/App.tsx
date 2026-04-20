@@ -1,11 +1,11 @@
-// import React, { useState } from 'react';
-// import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-// import { Sidebar } from './components/Sidebar';
-// import { SemanticSearch } from './components/SemanticSearch';
-// import { RatioExtractor } from './components/RatioExtractor';
-// import { CrossLingualMapper } from './components/CrossLingualMapper';
-// import { CitationGraph } from './components/CitationGraph';
+import { Sidebar } from './components/Sidebar';
+import { SemanticSearch } from './components/SemanticSearch';
+import { RatioExtractor } from './components/RatioExtractor';
+import { CrossLingualMapper } from './components/CrossLingualMapper';
+import { CitationGraph } from './components/CitationGraph';
 
 // export default function App() {
 //   const [activeTab, setActiveTab] = useState('search');
