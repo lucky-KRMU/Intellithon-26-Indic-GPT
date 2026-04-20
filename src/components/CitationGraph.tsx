@@ -37,12 +37,12 @@ export function CitationGraph() {
       <div className="flex-1 flex gap-6 min-h-0">
         <div className="flex-1 glass-panel rounded-2xl relative overflow-hidden bg-black/40 border border-white/10 shadow-[inset_0_0_100px_rgba(0,0,0,0.5)]">
            <svg width="100%" height="100%" className="absolute inset-0">
-//              {MOCK_LINKS.map((link, i) => {
-//                const sourceNode = MOCK_NODES.find(n => n.id === link.source)!;
-//                const targetNode = MOCK_NODES.find(n => n.id === link.target)!;
-//                const isSupport = link.type === 'supports';
-//                return (
-//                  <motion.line 
+              {MOCK_LINKS.map((link, i) => {
+               const sourceNode = MOCK_NODES.find(n => n.id === link.source)!;
+               const targetNode = MOCK_NODES.find(n => n.id === link.target)!;
+               const isSupport = link.type === 'supports';
+               return (
+                 <motion.line 
 //                    key={i}
 //                    initial={{ pathLength: 0, opacity: 0 }}
 //                    animate={{ pathLength: 1, opacity: 1 }}
