@@ -106,7 +106,7 @@ export function CitationGraph() {
                  <div className="text-xs text-textMuted uppercase tracking-wider mb-3">Connections</div>
                  <ul className="space-y-2">
                     {MOCK_LINKS.filter(l => l.source === selectedNode.id || l.target === selectedNode.id).map((l, i) => {
-//                      const isSource = l.source === selectedNode.id;
+                     const isSource = l.source === selectedNode.id;
                      const otherNodeId = isSource ? l.target : l.source;
                      const otherNode = MOCK_NODES.find(n => n.id === otherNodeId)!;
                      return (
@@ -123,9 +123,9 @@ export function CitationGraph() {
             </div>
           ) : (
             <div className="text-center text-textMuted/50 my-auto">Select a node to view details</div>
-//           )}
-//         </motion.div>
-//       </div>
-//     </div>
-//   );
-// }
+          )}
+        </motion.div>
+      </div>
+    </div>
+  );
+}
