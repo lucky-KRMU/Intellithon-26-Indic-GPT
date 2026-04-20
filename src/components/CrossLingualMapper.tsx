@@ -32,17 +32,17 @@ export function CrossLingualMapper() {
       <div className="glass-panel rounded-2xl p-6 mb-8">
         <div className="flex flex-col md:flex-row gap-4 items-center">
           <select 
-//             value={sourceLang}
-//             onChange={(e) => setSourceLang(e.target.value)}
-//             className="bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-text focus:outline-none focus:border-secondary/50 w-full md:w-48"
-//           >
-//             <option>Hindi</option>
-//             <option>Tamil</option>
-//             <option>Bengali</option>
-//             <option>Marathi</option>
-//           </select>
-//           <div className="flex-1 relative w-full">
-//             <input 
+            value={sourceLang}
+            onChange={(e) => setSourceLang(e.target.value)}
+            className="bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-text focus:outline-none focus:border-secondary/50 w-full md:w-48"
+          >
+            <option>Hindi</option>
+            <option>Tamil</option>
+            <option>Bengali</option>
+            <option>Marathi</option>
+          </select>
+          <div className="flex-1 relative w-full">
+            <input 
 //               type="text" 
 //               placeholder={`Enter query in ${sourceLang}... (e.g. "क्या हत्या के लिए इरादा जरूरी है?")`}
 //               className="w-full bg-black/30 border border-white/10 rounded-xl px-4 py-3 text-text focus:outline-none focus:border-secondary/50 font-serif"
