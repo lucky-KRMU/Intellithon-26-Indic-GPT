@@ -1,7 +1,7 @@
-// import React, { useState } from 'react';
-// import { motion } from 'framer-motion';
-// import { Network, Info } from 'lucide-react';
-// import { GraphNode, GraphLink } from '../types';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Network, Info } from 'lucide-react';
+import { GraphNode, GraphLink } from '../types';
 
 // const MOCK_NODES: GraphNode[] = [
 //   { id: 'n1', label: 'State of Maharashtra vs. Mayer Hans George', type: 'central', year: 1964, score: 100, x: 50, y: 50 },
