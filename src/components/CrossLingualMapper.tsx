@@ -61,33 +61,33 @@ export function CrossLingualMapper() {
       </div>
 
       {mapped && (
-//         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-1 md:grid-cols-2 gap-8">
-//           <div className="bg-surfaceHighlight/30 rounded-2xl p-6 border border-white/5 relative">
-//             <h3 className="text-sm font-bold text-textMuted uppercase tracking-wider mb-4 flex items-center gap-2">
-//               <Languages size={16} /> Mapped English Intent
-//             </h3>
-//             <p className="text-xl font-medium text-white mb-2">"Is intention necessary for murder?"</p>
-//             <div className="absolute top-1/2 -right-4 md:-right-6 w-8 md:w-12 h-12 flex items-center justify-center z-10 translate-x-1/2 -translate-y-1/2">
-//               <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center border border-secondary/30">
-//                 <ArrowRightLeft className="text-secondary" size={18} />
-//               </div>
-//             </div>
-//           </div>
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-surfaceHighlight/30 rounded-2xl p-6 border border-white/5 relative">
+            <h3 className="text-sm font-bold text-textMuted uppercase tracking-wider mb-4 flex items-center gap-2">
+              <Languages size={16} /> Mapped English Intent
+            </h3>
+            <p className="text-xl font-medium text-white mb-2">"Is intention necessary for murder?"</p>
+            <div className="absolute top-1/2 -right-4 md:-right-6 w-8 md:w-12 h-12 flex items-center justify-center z-10 translate-x-1/2 -translate-y-1/2">
+              <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center border border-secondary/30">
+                <ArrowRightLeft className="text-secondary" size={18} />
+              </div>
+            </div>
+          </div>
 
-//           <div className="glass-panel border-secondary/30 rounded-2xl p-6">
-//              <h3 className="text-sm font-bold text-secondary uppercase tracking-wider mb-4 flex items-center gap-2">
-//               <BookOpen size={16} /> Top Relevant English Precedent
-//             </h3>
-//             <h4 className="text-lg font-bold text-white mb-2">Virsa Singh vs. State of Punjab (1958)</h4>
-//             <p className="text-sm text-text/80 mb-4 bg-black/20 p-3 rounded-lg border border-white/5">
-//               Discusses the objective elements of murder under Section 300(c) of the IPC, explaining how intention to cause a particular bodily injury is determined.
-//             </p>
-//             <div className="text-xs text-textMuted font-mono bg-white/5 inline-block px-2 py-1 rounded">
-//               Cosine Similarity: 0.892
-//             </div>
-//           </div>
-//         </motion.div>
-//       )}
-//     </div>
-//   );
-// }
+          <div className="glass-panel border-secondary/30 rounded-2xl p-6">
+             <h3 className="text-sm font-bold text-secondary uppercase tracking-wider mb-4 flex items-center gap-2">
+              <BookOpen size={16} /> Top Relevant English Precedent
+            </h3>
+            <h4 className="text-lg font-bold text-white mb-2">Virsa Singh vs. State of Punjab (1958)</h4>
+            <p className="text-sm text-text/80 mb-4 bg-black/20 p-3 rounded-lg border border-white/5">
+              Discusses the objective elements of murder under Section 300(c) of the IPC, explaining how intention to cause a particular bodily injury is determined.
+            </p>
+            <div className="text-xs text-textMuted font-mono bg-white/5 inline-block px-2 py-1 rounded">
+              Cosine Similarity: 0.892
+            </div>
+          </div>
+        </motion.div>
+      )}
+    </div>
+  );
+}
