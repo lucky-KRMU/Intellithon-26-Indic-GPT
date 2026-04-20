@@ -20,10 +20,10 @@ const MOCK_LINKS: GraphLink[] = [
   { source: 'n1', target: 'n5', type: 'distinguishes' },
 ];
 
-// export function CitationGraph() {
-//   const [selectedNode, setSelectedNode] = useState<GraphNode | null>(MOCK_NODES[0]);
+export function CitationGraph() {
+  const [selectedNode, setSelectedNode] = useState<GraphNode | null>(MOCK_NODES[0]);
 
-//   return (
+  return (
 //     <div className="h-full flex flex-col max-w-6xl mx-auto w-full p-6 lg:p-10 relative z-10">
 //       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-6">
 //         <h2 className="text-3xl lg:text-4xl font-bold mb-2 font-serif flex items-center gap-3">
