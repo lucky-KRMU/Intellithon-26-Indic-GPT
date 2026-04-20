@@ -1,6 +1,6 @@
-// import React, { useState } from 'react';
-// import { motion } from 'framer-motion';
-// import { Languages, ArrowRightLeft, BookOpen, Search } from 'lucide-react';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Languages, ArrowRightLeft, BookOpen, Search } from 'lucide-react';
 
 // export function CrossLingualMapper() {
 //   const [sourceLang, setSourceLang] = useState('Hindi');
