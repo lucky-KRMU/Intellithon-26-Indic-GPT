@@ -81,7 +81,42 @@ export function SemanticSearch() {
   const [isSearching, setIsSearching] = useState(false);
   const [results, setResults] = useState<SearchResult[] | null>(null);
 
- 
+ const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!query.trim()) return;
+    setIsSearching(true);
+    setResults(null);
+    
+    // Simulate AI semantic search matching
+    setTimeout(() => {
+      const q = query.toLowerCase();
+      let matchedCases: SearchResult[] = [];
+      
+      if (q.includes('privacy') || q.includes('data') || q.includes('aadhaar')) {
+        matchedCases.push(CASE_DATABASE[2]);
+      } else if (q.includes('basic structure') || q.includes('amend') || q.includes('constitution')) {
+        matchedCases.push(CASE_DATABASE[3]);
+      } else if (q.includes('speech') || q.includes('internet') || q.includes('expression')) {
+        matchedCases.push(CASE_DATABASE[4]);
+      } else if (q.includes('mens rea') || q.includes('intention') || q.includes('crime')) {
+        matchedCases.push(CASE_DATABASE[0], CASE_DATABASE[1]);
+      } else {
+        // Fallback: fuzzy match or random return
+        const randomMatch = CASE_DATABASE.filter(c => c.title.toLowerCase().includes(q) || c.summary.toLowerCase().includes(q));
+        matchedCases = randomMatch.length > 0 ? randomMatch : [CASE_DATABASE[Math.floor(Math.random() * CASE_DATABASE.length)]];
+      }
+      
+      // Update scores to reflect query match
+      matchedCases = matchedCases.map(c => ({
+        ...c,
+        matchScore: Math.floor(Math.random() * 10) + 90 // Randomize score between 90-99
+      }));
+
+      setResults(matchedCases);
+      setIsSearching(false);
+    }, 1500);
+  };
+
 
   return (
     <div className="h-full flex flex-col max-w-5xl mx-auto w-full p-6 lg:p-10 relative z-10">
