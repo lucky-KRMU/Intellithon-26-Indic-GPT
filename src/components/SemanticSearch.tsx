@@ -4,6 +4,78 @@ import { Search, BookOpen, ChevronRight, FileOutput, ShieldAlert, CheckCircle2, 
 import { SearchResult } from '../types';
 
 
+const CASE_DATABASE: SearchResult[] = [
+  {
+    id: 1,
+    title: "State of Maharashtra vs. Mayer Hans George",
+    court: "Supreme Court of India",
+    year: "1964",
+    matchScore: 98,
+    summary: "A landmark judgment regarding mens rea in statutory offences, specifically dealing with the Foreign Exchange Regulation Act.",
+    ratio: "Unless a statute expressly or by necessary implication rules out mens rea as a constituent part of a crime, a defendant cannot be held guilty of an offence unless he has a guilty mind.",
+    citations: [
+      { text: "Sherras v. De Rutzen [1895] 1 QB 918", valid: true },
+      { text: "Brend v. Wood (1946) 175 LT 306", valid: true },
+      { text: "Srinivas Mall Bairoliya v. King-Emperor (1947)", valid: true }
+    ]
+  },
+  {
+    id: 2,
+    title: "Nathulal vs. State of Madhya Pradesh",
+    court: "Supreme Court of India",
+    year: "1965",
+    matchScore: 92,
+    summary: "Reaffirmed the principle of mens rea in Indian criminal jurisprudence, particularly concerning offenses under the Essential Commodities Act.",
+    ratio: "Mens rea is an essential ingredient of a criminal offence unless the statute expressly or by necessary implication excludes it.",
+    citations: [
+      { text: "Ravule Hariprasada Rao v. State (1951)", valid: true },
+      { text: "Rex v. Govind Ram (1960)", valid: false, hallucinated: true }
+    ]
+  },
+  {
+    id: 3,
+    title: "Justice K.S. Puttaswamy (Retd.) vs. Union of India",
+    court: "Supreme Court of India",
+    year: "2017",
+    matchScore: 99,
+    summary: "A historic judgment declaring the right to privacy as a fundamental right protected under Part III of the Constitution of India.",
+    ratio: "The right to privacy is protected as an intrinsic part of the right to life and personal liberty under Article 21 and as a part of the freedoms guaranteed by Part III of the Constitution.",
+    citations: [
+      { text: "Kharak Singh v. State of UP (1962)", valid: true },
+      { text: "MP Sharma v. Satish Chandra (1954)", valid: true },
+      { text: "Roe v. Wade (1973) - US Supreme Court", valid: true }
+    ]
+  },
+  {
+    id: 4,
+    title: "Kesavananda Bharati vs. State of Kerala",
+    court: "Supreme Court of India",
+    year: "1973",
+    matchScore: 97,
+    summary: "The landmark case that established the 'Basic Structure Doctrine' of the Indian Constitution, limiting Parliament's amending power.",
+    ratio: "Article 368 does not enable Parliament to alter the basic structure or framework of the Constitution.",
+    citations: [
+      { text: "I.C. Golaknath v. State of Punjab (1967)", valid: true },
+      { text: "Sajjan Singh v. State of Rajasthan (1965)", valid: true },
+      { text: "State of Madras v. Champakam Dorairajan", valid: false, hallucinated: true }
+    ]
+  },
+  {
+    id: 5,
+    title: "Shreya Singhal vs. Union of India",
+    court: "Supreme Court of India",
+    year: "2015",
+    matchScore: 95,
+    summary: "Struck down Section 66A of the Information Technology Act, 2000, upholding the fundamental right to free speech online.",
+    ratio: "Section 66A is cast so widely that virtually any opinion on any subject would be covered by it. It is unconstitutional for violating Article 19(1)(a) without falling under reasonable restrictions.",
+    citations: [
+      { text: "Romesh Thappar v. State of Madras (1950)", valid: true },
+      { text: "Chintaman Rao v. State of Madhya Pradesh", valid: true }
+    ]
+  }
+];
+
+
 export function SemanticSearch() {
   const [query, setQuery] = useState('');
   const [isSearching, setIsSearching] = useState(false);
