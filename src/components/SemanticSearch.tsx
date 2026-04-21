@@ -87,7 +87,6 @@ export function SemanticSearch() {
     setIsSearching(true);
     setResults(null);
     
-    // Simulate AI semantic search matching
     setTimeout(() => {
       const q = query.toLowerCase();
       let matchedCases: SearchResult[] = [];
@@ -106,10 +105,9 @@ export function SemanticSearch() {
         matchedCases = randomMatch.length > 0 ? randomMatch : [CASE_DATABASE[Math.floor(Math.random() * CASE_DATABASE.length)]];
       }
       
-      // Update scores to reflect query match
       matchedCases = matchedCases.map(c => ({
         ...c,
-        matchScore: Math.floor(Math.random() * 10) + 90 // Randomize score between 90-99
+        matchScore: Math.floor(Math.random() * 10) + 90 
       }));
 
       setResults(matchedCases);
