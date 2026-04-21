@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FileOutput, ScanLine, FileText, CheckCircle } from 'lucide-react';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Search, Scale, Languages, Network, FileOutput } from 'lucide-react';
 
 interface SidebarProps {

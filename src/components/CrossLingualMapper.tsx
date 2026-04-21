@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Languages, ArrowRightLeft, BookOpen, Search } from 'lucide-react';
 
